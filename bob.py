@@ -1,25 +1,62 @@
-import time #IFYOUSEETHISEDITTHISWORKS. t. julkkis666
+import time
 import random
 starttimes = 5
 
 while starttimes >= 0:
     
+    
+    print "***********"
+    print "***********"
+    print "*** D C ***"
+    print "*** 1.0 ***"
     print "***********"
     print "..........."
+    time.sleep(0.1)
+    print "\n"*60
+    
+    print "***********"
+    print "***********"
+    print "*** D C ***"
+    print "*** 1.0 ***"
+    print "..........."
+    print "***********"
+    time.sleep(0.1)
+    print "\n"*60
+    
+    print "***********"
+    print "***********"
     print "*** D C ***"
     print "... 1.0 ..."
     print "***********"
+    print "***********"
+    time.sleep(0.1)
+    print "\n"*60
+    
+    print "***********"
+    print "***********"
+    print "... D C ..."
+    print "*** 1.0 ***"
+    print "***********"
+    print "***********"
+    time.sleep(0.1)
+    print "\n"*60
+    
+    print "***********"
     print "..........."
-    time.sleep(0.01)
+    print "*** D C ***"
+    print "*** 1.0 ***"
+    print "***********"
+    print "***********"
+    time.sleep(0.1)
     print "\n"*60
     
     print "..........."
     print "***********"
-    print "... D C ..."
+    print "*** D C ***"
     print "*** 1.0 ***"
-    print "..........."
     print "***********"
-    time.sleep(0.01)
+    print "***********"
+    time.sleep(0.1)
     print "\n"*60
     starttimes -= 1
 
@@ -196,9 +233,9 @@ while try2 != 1:
 def encounter(player,entity):
     
     print "\n"*60
-    print "YOU ENCOUNTERED A" entity.klass, "!"
+    print "YOU ENCOUNTERED A", entity.klass, "!"
     print
-    print entity.taunt
+#    print entity.taunt #TODO: FIX ME
     battle(player,entity)
 
 
@@ -367,7 +404,7 @@ def battle(player,entity):
 
 def cave(player,goblin):
     print "\n"*60
-    print "you walk arround in the cave."
+    print "you walk around in the cave."
     whatdo2 = 1
     while whatdo2 == 1:
         chanse = random.randint(0,5)
@@ -409,9 +446,9 @@ def noob_tower(player,goblin,evil_wizard):
         upp = 1
         while upp >= 1:
             print "\n"*60
-            print "'~'Â¨Â´'~'Â¨Â´'~'Â¨Â´'~'Â¨Â´'~'Â¨Â´'~'Â¨Â´'~'Â¨Â´'~'Â¨Â´'~'Â¨Â´'~'Â¨Â´'~'Â¨Â´'~'Â¨Â´'~'"
+            print "'~'¨´'~'¨´'~'¨´'~'¨´'~'¨´'~'¨´'~'¨´'~'¨´'~'¨´'~'¨´'~'¨´'~'¨´'~'"
             print "The further you climb,\n the more of the dark magic you feel in your fingers."
-            print "'~'Â¨Â´'~'Â¨Â´'~'Â¨Â´'~'Â¨Â´'~'Â¨Â´'~'Â¨Â´'~'Â¨Â´'~'Â¨Â´'~'Â¨Â´'~'Â¨Â´'~'Â¨Â´'~'Â¨Â´'~'"
+            print "'~'¨´'~'¨´'~'¨´'~'¨´'~'¨´'~'¨´'~'¨´'~'¨´'~'¨´'~'¨´'~'¨´'~'¨´'~'"
             print "\nYou climb the stairs of the tower.\n"
             print "You're on level", upp
             print
@@ -472,7 +509,8 @@ def noob_tower(player,goblin,evil_wizard):
     print
     print "The further you climb, the more of the dark magic you'll start to feel in your fingers."
 
-
+###########
+Village
 
 ###########
 #World Map#
@@ -515,7 +553,9 @@ while player.hp > 0:
             evil_wizard = evil_wizard()
             noob_tower(player,goblin,evil_wizard)
 
-
+    if location == [1,1]: 
+        print "You see a village! It looks nice and comfortable."
+        print "Do you want to go to the village?\n(1)Yes\n(2)No.\n" tryer(num,string)
 
 
 
@@ -538,4 +578,3 @@ print "add stuff here"
 #karl = player()
 #karl.setHP(69)
 #print karl.hp
-
